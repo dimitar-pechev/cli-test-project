@@ -1,0 +1,5 @@
+<!-- #input craetes a template variable which points to the native element to which it's attached -->
+<!-- in this case this is an input html element which has a 'value' property, which can be used to access its text value -->
+<input #input [value]="text" />
+<button (click)="handleTextSubmit(input.value)">Submit</button>
+<button (click)="handleCancelClick()">Cancel</button>

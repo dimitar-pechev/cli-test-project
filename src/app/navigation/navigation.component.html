@@ -1,0 +1,7 @@
+<nav>{{ navigationTitle }}</nav>
+
+<!-- triggering an event emission from the numberClick output directly from the template -->
+<!-- it makes no difference whether you call it directly from here or if you call a ts class method here which triggers the emission -->
+<div *ngFor="let number of numbers" (click)="numberClick.emit(number)">
+  {{ number }}
+</div>
